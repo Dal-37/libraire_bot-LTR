@@ -1,5 +1,6 @@
 import sqlite3
 import discord
+import os
 
 conn = sqlite3.connect("librairie.db")
 cur = conn.cursor()
@@ -239,4 +240,4 @@ class Bot(discord.Client):
 
 if __name__ == "__main__":
     bot = Bot()
-    bot.run('Nzk1NzA5ODg5OTM0NTI0NDE4.X_NUlQ.CIu6lo8RQuJo8ckiVWBa9EeQ1Vc')
+    bot.run(os.envir[TOKEN])
